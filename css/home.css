@@ -26,7 +26,7 @@
 
 /* Hero Section */
 .hero-section {
-    background: url('img/banner.jpg') no-repeat center center/cover;
+    background: url('/img/banner.jpg') no-repeat center center/cover;
     min-height: 400px;
     position: relative;
     color: white;
