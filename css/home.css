@@ -82,33 +82,6 @@
     border-top-right-radius: 10px;
 }
 
-/* Footer */
-.footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.footer .social-icons a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 20px;
-}
-
-.footer .newsletter-form input[type="email"] {
-    max-width: 300px;
-    margin-right: 10px;
-}
 
 /* Modals */
 .modal-content {
