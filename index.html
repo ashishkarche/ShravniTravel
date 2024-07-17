@@ -7,8 +7,8 @@
     <title>Welcome | Shravani Travels </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -38,14 +38,63 @@
     </div>
 
     <div class="hero-section">
-        <div class="hero-content">
-            <h1 class="display-4 fw-bold">Take a trip around the world together</h1>
-            <p class="lead">Find awesome flights, hotels, tours, cars, and packages</p>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="contact-section">
+                        <div class="contact-info">
+                            <h1>Contact Us Today!</h1>
+                            <div class="contact-details">
+                                <p><i class="fas fa-envelope me-3"></i>vikarche@gmail.com</p>
+                                <p><i class="fas fa-phone me-3"></i> +91 988140654</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="animated-text">
+                        <h1 class="animate-text">TAKE A TRIP AROUND THE WORLD TOGETHER</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container py-5">
-        <h2 class="section-title mb-4">Most Popular Adventures</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="search-box p-4">
+                    <div class="row mb-3">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <label for="fromLocation" class="form-label">From</label>
+                            <select id="fromLocation" class="form-select">
+                                <option selected>Pick Up Location</option>
+                                <option value="location1">Location 1</option>
+                                <option value="location2">Location 2</option>
+                                <option value="location3">Location 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <label for="toLocation" class="form-label">To</label>
+                            <select id="toLocation" class="form-select">
+                                <option selected>Drop Location</option>
+                                <option value="location1">Location 1</option>
+                                <option value="location2">Location 2</option>
+                                <option value="location3">Location 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 align-self-end text-center">
+                            <button type="button" class="btn btn-outline-primary w-100">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <h2 class="section-title mb-4">Popular Packages</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card shadow-sm">
@@ -138,9 +187,6 @@
                 <a href="" class="me-4 text-reset">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-github"></i>
-                </a>
             </div>
             <!-- Right -->
         </section>
@@ -191,10 +237,9 @@
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            xyz@example.com
+                            vikarche@gmail.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> +91 1234567890</p>
-                        <p><i class="fas fa-print me-3"></i> +91 1234567890</p>
+                        <p><i class="fas fa-phone me-3"></i> +91 988140654</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -210,11 +255,45 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz4fnFO9gybBogGz1k943ri8M6b5zwIrvY2LkcfplbEN5RPBXojw4kCORb"
-        crossorigin="anonymous"></script>
+    <!-- <script>
+        // Function to simulate typing effect
+        function typeWriter(textElement, text, delay = 100) {
+            const textArray = text.split('');
+            textElement.textContent = '';
+            textArray.forEach((char, index) => {
+                setTimeout(() => {
+                    textElement.textContent += char;
+                }, delay * index);
+            });
+        }
+
+        // Function to erase text
+        function eraseText(textElement, delay = 50) {
+            const text = textElement.textContent;
+            for (let i = text.length; i >= 0; i--) {
+                setTimeout(() => {
+                    textElement.textContent = text.slice(0, i);
+                }, delay * (text.length - i));
+            }
+        }
+
+        // Function to run the typing animation
+        function runTypingAnimation() {
+            const textElement = document.querySelector('.animate-text');
+            const text = textElement.textContent.trim();
+
+            eraseText(textElement); // Erase existing text (if any)
+
+            setTimeout(() => {
+                typeWriter(textElement, text); // Type the text
+            }, 500); // Delay before typing starts (adjust as needed)
+        }
+
+        // Run typing animation on page load
+        document.addEventListener('DOMContentLoaded', runTypingAnimation);
+    </script> -->
+    <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>

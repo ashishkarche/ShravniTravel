@@ -30,10 +30,8 @@
     min-height: 400px;
     position: relative;
     color: white;
-    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 120px 0;
 }
 
@@ -50,9 +48,72 @@
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
 }
+
+.contact-section .contact-info {
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+/* Typewriter Animation */
+.animated-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.animate-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-section .contact-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .animate-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .animate-text {
+        font-size: 1.2rem;
+    }
+}
+
 
 /* Main Content Sections */
 .container-section {
@@ -126,5 +187,43 @@
     .btn-light {
         padding: 0.25rem 0.75rem;
         font-size: 0.9rem;
+    }
+}
+
+/* Search Box */
+.search-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box .form-select,
+.search-box .btn {
+    border-radius: 5px;
+}
+
+.search-box .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Search Box */
+@media (max-width: 768px) {
+    .search-box .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box .col-md-4 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .search-box .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+
+    .search-box .btn {
+        margin-top: 0;
     }
 }
