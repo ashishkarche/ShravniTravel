@@ -19,3 +19,33 @@
         h6 {
             color: #343a40;
         }
+
+        /* Navbar logo adjustments */
+        .navbar-brand img {
+            width: 50px;
+            /* Adjust the width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            max-height: 50px;
+            /* Adjust the maximum height as needed */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+
+            .navbar-brand img {
+                width: 40px;
+                /* Adjust the width for smaller screens */
+                max-height: 40px;
+                /* Adjust the maximum height for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                width: 30px;
+                /* Adjust the width for extra small screens */
+                max-height: 30px;
+                /* Adjust the maximum height for extra small screens */
+            }
+        }

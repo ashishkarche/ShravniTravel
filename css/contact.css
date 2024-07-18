@@ -42,6 +42,18 @@
     text-align: center;
 }
 
+/* Responsive Map */
+.map iframe {
+    width: 100%; /* Full width on smaller screens */
+    height: 450px; /* Fixed height on larger screens */
+}
+
+@media (max-width: 768px) {
+    .map iframe {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
+
 .social-icons a {
     font-size: 20px;
     margin: 0 10px;

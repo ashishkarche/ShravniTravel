@@ -6,22 +6,11 @@
     z-index: 10;
 }
 
-.nav-link,
-.navbar-brand,
-.btn-outline-light,
-.btn-light {
-    color: white !important;
-}
-
 .nav-link:hover,
 .navbar-brand:hover,
 .btn-outline-light:hover,
 .btn-light:hover {
     color: #ddd !important;
-}
-
-.header .navbar-brand img {
-    filter: brightness(0) invert(1);
 }
 
 /* Hero Section */
@@ -48,12 +37,48 @@
 .hero-content {
     position: relative;
     z-index: 1;
-    width: 100%;
 }
 
-.contact-section .contact-info {
-    max-width: 400px;
-    margin-left: 20px;
+/* Animated Text */
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+    position: relative;
+    margin-top: 20px;
+}
+
+.contact-info .contact-details  a{
+    text-decoration: none;
+    color: #ddd;
+}
+.contact-info .contact-details  a:hover{
+    text-decoration: none;
+    color: lightblue;
+}
+
+.contact-section:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+    animation: glass-effect 1s infinite alternate;
+}
+
+@keyframes glass-effect {
+    0% { background: rgba(255, 255, 255, 0.2); }
+    100% { background: rgba(255, 255, 255, 0.4); }
 }
 
 /* Typewriter Animation */
@@ -71,29 +96,6 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: .15em solid orange;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: orange;
-    }
 }
 
 /* Responsive Adjustments */
@@ -113,7 +115,6 @@
         font-size: 1.2rem;
     }
 }
-
 
 /* Main Content Sections */
 .container-section {
@@ -142,7 +143,6 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 
 /* Modals */
 .modal-content {

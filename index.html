@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="" alt="">
+                    <img src="../img/logo.png" alt="logo">
                     SHRAVANI TOURS & TRAVELS
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,15 +45,18 @@
                         <div class="contact-info">
                             <h1>Contact Us Today!</h1>
                             <div class="contact-details">
-                                <p><i class="fas fa-envelope me-3"></i>vikarche@gmail.com</p>
-                                <p><i class="fas fa-phone me-3"></i> +91 988140654</p>
+                                <p><i class="fas fa-envelope me-3"></i><a
+                                        href="mailto:vikarche@gmail.com">vikarche@gmail.com</a></p>
+                                <p>
+                                    <a href="tel:+91988140654" class="btn btn-outline-dark">Call +91 988140654</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 text-center">
                     <div class="animated-text">
-                        <h1 class="animate-text">TAKE A TRIP AROUND THE WORLD TOGETHER</h1>
+                        <h1 class="animate-text"></h1>
                     </div>
                 </div>
             </div>
@@ -84,7 +87,7 @@
                             </select>
                         </div>
                         <div class="col-md-4 align-self-end text-center">
-                            <button type="button" class="btn btn-outline-primary w-100">Search</button>
+                            <button type="button" class="btn btn-outline-dark w-100">Search</button>
                         </div>
                     </div>
                 </div>
@@ -256,43 +259,45 @@
         <!-- Copyright -->
     </footer>
 
-    <!-- <script>
-        // Function to simulate typing effect
-        function typeWriter(textElement, text, delay = 100) {
-            const textArray = text.split('');
-            textElement.textContent = '';
-            textArray.forEach((char, index) => {
-                setTimeout(() => {
-                    textElement.textContent += char;
-                }, delay * index);
-            });
-        }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElement = document.querySelector(".animate-text");
+            const text = "TAKE A TRIP AROUND THE WORLD<br>TOGETHER"; // The full text with a line break
+            let index = 0;
+            let isAdding = true;
+            const typingSpeed = 100; // typing speed in milliseconds
+            const erasingSpeed = 50; // erasing speed in milliseconds
+            const delay = 2000; // delay before erasing in milliseconds
 
-        // Function to erase text
-        function eraseText(textElement, delay = 50) {
-            const text = textElement.textContent;
-            for (let i = text.length; i >= 0; i--) {
-                setTimeout(() => {
-                    textElement.textContent = text.slice(0, i);
-                }, delay * (text.length - i));
+            function type() {
+                textElement.innerHTML = text.slice(0, index).replace("\n", "<br>");
+
+                if (isAdding) {
+                    if (index < text.length) {
+                        index++;
+                        setTimeout(type, typingSpeed);
+                    } else {
+                        isAdding = false;
+                        setTimeout(type, delay);
+                    }
+                } else {
+                    if (index > 0) {
+                        index--;
+                        setTimeout(type, erasingSpeed);
+                    } else {
+                        isAdding = true;
+                        setTimeout(type, typingSpeed);
+                    }
+                }
             }
-        }
 
-        // Function to run the typing animation
-        function runTypingAnimation() {
-            const textElement = document.querySelector('.animate-text');
-            const text = textElement.textContent.trim();
+            type();
+        });
+    </script>
 
-            eraseText(textElement); // Erase existing text (if any)
 
-            setTimeout(() => {
-                typeWriter(textElement, text); // Type the text
-            }, 500); // Delay before typing starts (adjust as needed)
-        }
 
-        // Run typing animation on page load
-        document.addEventListener('DOMContentLoaded', runTypingAnimation);
-    </script> -->
+
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
