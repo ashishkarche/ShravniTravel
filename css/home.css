@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     padding: 120px 0;
+    background-attachment: fixed;
 }
 
 .hero-section::before {
@@ -239,16 +240,20 @@
     text-align: center;
     padding: 50px 0;
 }
+
 .how-it-works h2 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 .how-it-works p {
     margin-bottom: 40px;
 }
+
 .step {
     margin-bottom: 20px;
 }
+
 .step .icon {
     background-color: #f0f0f5;
     border-radius: 50%;
@@ -259,6 +264,7 @@
     justify-content: center;
     margin: 0 auto 20px;
 }
+
 .step h5 {
     font-weight: bold;
 }

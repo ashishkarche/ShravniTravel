@@ -1,0 +1,212 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.card.armada {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card.armada:hover {
+  transform: scale(1.05);
+}
+
+.card.armada .card-body {
+  padding: 2rem;
+}
+
+.card.armada .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card.armada .card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+.card.armada .summary {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card.armada .summary .price .currency {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.card.armada .summary .price .nominal {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.card.armada .summary .periode {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card.armada .d-flex .driver,
+.card.armada .d-flex .gasoline,
+.card.armada .d-flex .capacity {
+  font-size: 1rem;
+  color: #343a40;
+  margin: 0.5rem;
+}
+
+.card.armada .action .btn-group .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .section span {
+  margin-right: 1rem;
+}
+
+.footer .section a {
+  color: #ffc107;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer .section a:hover {
+  color: #fff;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .container .col {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer .container .col h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer .container .col p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.footer .container .col a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer .container .col a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Tooltip styles */
+[data-bs-toggle="tooltip"] {
+  position: relative;
+}
+
+[data-bs-toggle="tooltip"]::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #343a40;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+[data-bs-toggle="tooltip"]:hover::after {
+  opacity: 1;
+}
+
+/* Additional styles */
+.checked {
+  color: orange;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.car-image {
+  width: 100px;
+  height: 75px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.product-name {
+  text-align: left;
+}
+
+.car-list {
+  overflow-x: auto;
+}
+
+.product-name h3 {
+  font-size: 24px;
+}
+
+.price-rate .num {
+  font-size: 22px;
+}
+
+.price-rate .per {
+  font-size: 16px;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.rent-btn {
+  margin-bottom: 15px;
+  display: block;
+}
