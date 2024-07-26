@@ -1,0 +1,113 @@
+
+@-webkit-keyframes animation-bg {
+    0% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+@keyframes animation-bg {
+    0% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+.card {
+    margin-top: 5%;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+}
+
+
+.btn {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    border-radius: 10px;
+    padding: 0.8rem 1.7rem;
+    border: none;
+    font-weight: bold;
+}
+
+.card:hover .btn {
+    opacity: 1;
+    top: 100%;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.7);
+
+}
+
+h5 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-shadow: 1px 1px 2px black;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.card:hover h5 {
+    opacity: 1;
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: white;
+    border: none;
+}
+
+div.col-12:nth-child(1)>.card:nth-child(1)>.btn:nth-child(3):hover {
+    background-color: Navy;
+}
+
+div.col-12:nth-child(2)>.card:nth-child(1)>.btn:nth-child(3):hover {
+    background-color: SeaGreen;
+}
+
+div.col-12:nth-child(3)>.card:nth-child(1)>.btn:nth-child(3):hover {
+    background-color: PaleVioletRed;
+}
+
+.card img {
+    filter: blur(0px);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    border-radius: 15px;
+}
+
+.card:hover img {
+    filter: blur(3px);
+}
