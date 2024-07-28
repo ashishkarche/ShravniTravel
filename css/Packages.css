@@ -86,18 +86,6 @@ h5 {
     border: none;
 }
 
-div.col-12:nth-child(1)>.card:nth-child(1)>.btn:nth-child(3):hover {
-    background-color: Navy;
-}
-
-div.col-12:nth-child(2)>.card:nth-child(1)>.btn:nth-child(3):hover {
-    background-color: SeaGreen;
-}
-
-div.col-12:nth-child(3)>.card:nth-child(1)>.btn:nth-child(3):hover {
-    background-color: PaleVioletRed;
-}
-
 .card img {
     filter: blur(0px);
     -webkit-transition: all .2s ease-out;
