@@ -8,13 +8,13 @@
             let url = '';
 
             if (fromLocation === 'locationA' && toLocation === 'locationB') {
-                url = '../packages/price.html';
+                url = 'packages/price.html';
             } else if (fromLocation === 'locationC' && toLocation === 'locationD') {
-                url = '../packages/locationC_D.html';
+                url = 'packages/locationC_D.html';
             } else if (fromLocation === 'locationE' && toLocation === 'locationF') {
-                url = '../packages/locationE_F.html';
+                url = 'packages/locationE_F.html';
             } else {
-                url = '../packages/price.html'; // Default page or handle other cases
+                url = 'packages/price.html'; // Default page or handle other cases
             }
 
             window.location.href = url;
