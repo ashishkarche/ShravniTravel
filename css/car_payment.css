@@ -1,307 +1,85 @@
 /* General Styles */
-.h-100 {
-    height: 100% !important;
-}
-
-.h-custom {
-    min-height: 100vh;
-}
-
-.container.h-100 {
-    background-color: #eee;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
 .card.shopping-cart {
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Product Section Styles */
 .card-body {
     padding: 2rem;
 }
 
-h3.text-uppercase {
-    text-transform: uppercase;
-}
-
-.fw-bold {
+/* Heading Styles */
+.card-body h3 {
+    color: #007bff;
     font-weight: bold;
-}
-
-.d-flex.align-items-center.mb-5 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.flex-shrink-0 img {
-    width: 150px;
-}
-
-.flex-grow-1.ms-3 {
-    flex-grow: 1;
-    margin-left: 1rem;
-}
-
-.float-end {
-    float: right;
-}
-
-.text-primary {
-    color: #1266f1 !important;
-}
-
-.text-body {
-    color: #000 !important;
-}
-
-.number-input {
-    display: flex;
-    align-items: center;
-}
-
-.number-input button {
-    cursor: pointer;
-}
-
-.number-input input {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
     text-align: center;
+}
+
+/* Form Styles */
+.card-body .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.card-body .form-control {
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-}
-
-.def-number-input {
-    display: flex;
-    align-items: center;
-}
-
-hr {
-    height: 2px;
-    background-color: #1266f1;
-    opacity: 1;
+    padding: 0.75rem;
     margin-bottom: 1rem;
 }
 
-/* Pricing and Total Styles */
-.d-flex.justify-content-between {
-    display: flex;
-    justify-content: space-between;
+/* Button Styles */
+.card-body .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
 }
 
-.bg-primary {
-    background-color: #1266f1 !important;
+.card-body .btn:hover {
+    background-color: #666;
 }
 
-.p-2 {
-    padding: 0.5rem !important;
+.card-body .btn-primary {
+    margin-right: 0.5rem;
 }
 
-.mb-2 {
-    margin-bottom: 0.5rem !important;
+/* Booking Summary Styles */
+.booking-summary {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.px-x {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-/* Payment Section Styles */
-.form-outline {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
-.form-outline .form-control {
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    padding: 1rem;
-}
-
-.form-outline .form-label {
-    position: absolute;
-    top: -1rem;
-    left: 0.75rem;
-    background-color: #fff;
-    padding: 0 0.25rem;
-    color: #9e9e9e;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
-}
-
-.col-md-6 {
-    flex: 0 0 auto;
-    width: 50%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-}
-
-#typeText,
-#typeName,
-#typeExp,
-#exp {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-}
-
-.mb-5 {
-    margin-bottom: 3rem !important;
-}
-
-/* Buy Now Button */
-.btn.btn-primary.btn-block.btn-lg {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.25rem;
-    border-radius: 0.25rem;
-    background-color: #1266f1;
-    border-color: #1266f1;
-}
-
-.btn.btn-primary.btn-block.btn-lg:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-h5.fw-bold.mb-5 {
+.booking-summary h3 {
+    color: #007bff;
     font-weight: bold;
-    margin-bottom: 3rem !important;
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-h5.fw-bold.mb-5 a {
-    color: #1266f1;
-    text-decoration: none;
+/* Table Styles */
+.booking-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 
-h5.fw-bold.mb-5 a:hover {
-    text-decoration: underline;
+.booking-summary th, .booking-summary td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .container.h-100 {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-
-    .card-body {
-        padding: 1.5rem;
-    }
-
-    .h3.text-uppercase {
-        font-size: 1.5rem;
-    }
-
-    .flex-shrink-0 img {
-        width: 120px;
-    }
-
-    .form-outline .form-label {
-        font-size: 0.875rem;
-    }
+.booking-summary th {
+    background-color: #666;
+    color: white;
+    font-weight: bold;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .container.h-100 {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-
-    .card-body {
-        padding: 2rem;
-    }
-
-    .h3.text-uppercase {
-        font-size: 1.75rem;
-    }
-
-    .flex-shrink-0 img {
-        width: 130px;
-    }
-
-    .form-outline .form-label {
-        font-size: 1rem;
-    }
-
-    .row {
-        margin-right: -0.5rem;
-        margin-left: -0.5rem;
-    }
-
-    .col-md-6 {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .container.h-100 {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
-
-    .card-body {
-        padding: 2.5rem;
-    }
-
-    .h3.text-uppercase {
-        font-size: 2rem;
-    }
-
-    .flex-shrink-0 img {
-        width: 140px;
-    }
-
-    .form-outline .form-label {
-        font-size: 1.125rem;
-    }
-
-    .row {
-        margin-right: -0.75rem;
-        margin-left: -0.75rem;
-    }
-
-    .col-md-6 {
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .container.h-100 {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-    }
-
-    .card-body {
-        padding: 3rem;
-    }
-
-    .h3.text-uppercase {
-        font-size: 2.25rem;
-    }
-
-    .flex-shrink-0 img {
-        width: 150px;
-    }
-
-    .form-outline .form-label {
-        font-size: 1.25rem;
-    }
+.booking-summary td strong {
+    color: #333;
 }

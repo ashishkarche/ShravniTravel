@@ -72,6 +72,7 @@
             text-decoration: none;
             color: #fff;
         }
+
         .hero-wrap.hero-wrap-2 .breadcrumb li {
             text-decoration: none;
             color: #D3D3D3;
@@ -221,5 +222,29 @@
             .btn-light {
                 padding: 0.25rem 0.75rem;
                 font-size: 0.9rem;
+            }
+        }
+
+        /* Extra Small devices (phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            .hero-wrap.hero-wrap-2 .breadcrumb {
+                font-size: 0.8rem;
+                left: 20px;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .hero-wrap.hero-wrap-2 .breadcrumb {
+                font-size: 1rem;
+                left: 30px;
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .hero-wrap.hero-wrap-2 .breadcrumb {
+                font-size: 1.2rem;
+                left: 40px;
             }
         }
