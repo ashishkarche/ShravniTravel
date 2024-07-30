@@ -1,85 +1,171 @@
-/* General Styles */
-.card.shopping-cart {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    /* General Styles */
+    .card.shopping-cart {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.card-body {
-    padding: 2rem;
-}
+    .card-body {
+        padding: 2rem;
+    }
 
-/* Heading Styles */
-.card-body h3 {
-    color: #007bff;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-}
+    /* Heading Styles */
+    .card-body h3 {
+        color: #007bff;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
 
-/* Form Styles */
-.card-body .form-label {
-    font-weight: bold;
-    color: #555;
-}
+    /* Form Styles */
+    .card-body .form-label {
+        font-weight: bold;
+        color: #555;
+    }
 
-.card-body .form-control {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-}
+    .card-body .form-control {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
 
-/* Button Styles */
-.card-body .btn {
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-}
+    /* Button Styles */
+    .card-body .btn {
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
 
-.card-body .btn:hover {
-    background-color: #666;
-}
+    .card-body .btn:hover {
+        color: #333;
+    }
 
-.card-body .btn-primary {
-    margin-right: 0.5rem;
-}
+    .card-body .btn-primary {
+        margin-right: 0.5rem;
+    }
 
-/* Booking Summary Styles */
-.booking-summary {
-    background-color: #f8f9fa;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    /* Booking Summary Styles */
+    .booking-summary {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.booking-summary h3 {
-    color: #007bff;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
+    .booking-summary h3 {
+        color: #007bff;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
 
-/* Table Styles */
-.booking-summary table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-}
+    /* Table Styles */
+    .booking-summary table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
 
-.booking-summary th, .booking-summary td {
-    padding: 0.75rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
+    .booking-summary th,
+    .booking-summary td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
 
-.booking-summary th {
-    background-color: #666;
-    color: white;
-    font-weight: bold;
-}
+    .booking-summary th {
+        background-color: #666;
+        color: white;
+        font-weight: bold;
+    }
 
-.booking-summary td strong {
-    color: #333;
-}
+    .booking-summary td strong {
+        color: #333;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+        .card-body {
+            padding: 1rem;
+        }
+
+        .booking-summary {
+            padding: 1rem;
+        }
+
+        .card-body h3,
+        .booking-summary h3 {
+            font-size: 1.5rem;
+        }
+
+        .card-body .form-control {
+            padding: 0.5rem;
+        }
+
+        .card-body .btn {
+            padding: 0.5rem 1rem;
+        }
+
+        .booking-summary table th,
+        .booking-summary table td {
+            padding: 0.5rem;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .booking-summary {
+            padding: 1.5rem;
+        }
+
+        .card-body h3,
+        .booking-summary h3 {
+            font-size: 1.75rem;
+        }
+
+        .card-body .form-control {
+            padding: 0.65rem;
+        }
+
+        .card-body .btn {
+            padding: 0.65rem 1.25rem;
+        }
+
+        .booking-summary table th,
+        .booking-summary table td {
+            padding: 0.65rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .card-body {
+            padding: 2rem;
+        }
+
+        .booking-summary {
+            padding: 2rem;
+        }
+
+        .card-body h3,
+        .booking-summary h3 {
+            font-size: 2rem;
+        }
+
+        .card-body .form-control {
+            padding: 0.75rem;
+        }
+
+        .card-body .btn {
+            padding: 0.75rem 1.5rem;
+        }
+
+        .booking-summary table th,
+        .booking-summary table td {
+            padding: 0.75rem;
+        }
+    }
