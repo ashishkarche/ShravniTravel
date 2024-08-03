@@ -14,13 +14,13 @@ window.addEventListener('load', function() {
     }
 
     // Check for user session or cookies
-    checkCookie(); // Or checkSession() if using sessionStorage
+    checkCookie(); 
 
     // Show popup for 1 second
     popup.style.display = 'flex';
     setTimeout(() => {
         popup.style.display = 'none';
-    }, 4000);
+    }, 5000);
 });
 
 function setCookie(name, value, days) {
@@ -46,19 +46,16 @@ function getCookie(name) {
     return "";
 }
 
-function checkCookie() {
-    const user = getCookie("username");
-    const popupContent = document.getElementById('popup-content');
+function generateRandomName() {
+    const names = ["Alex", "Sam", "Jamie", "Taylor", "Jordan", "Casey", "Riley", "Morgan", "Charlie", "Parker"];
+    return names[Math.floor(Math.random() * names.length)];
+}
 
-    if (user !== "") {
-        popupContent.innerHTML = "Welcome again, " + user;
-    } else {
-        const userName = prompt("Please enter your name:", "");
-        if (userName !== "" && userName !== null) {
-            setCookie("username", userName, 365);
-            popupContent.innerHTML = "Welcome, " + userName;
-        } else {
-            popupContent.innerHTML = "Welcome to Shravani Tours & Travels";
-        }
+function checkCookie() {
+    let user = getCookie("username");
+
+    if (user === "") {
+        user = generateRandomName();
+        setCookie("username", user, 365);
     }
 }
