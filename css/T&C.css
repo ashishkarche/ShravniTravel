@@ -1,0 +1,75 @@
+/* T&C.css */
+
+.terms-conditions {
+    background: linear-gradient(135deg, #f6f6f6 25%, #ffffff 100%);
+    /* padding: 60px 0; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.terms-conditions .header-section {
+    margin-bottom: 40px;
+}
+
+.terms-conditions .header-section .title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.terms-conditions .header-section .title span {
+    color: #f91942;
+    position: relative;
+}
+
+.terms-conditions .header-section .title::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #f91942;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.terms-conditions .terms-content {
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.terms-conditions .terms-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f91942;
+    font-weight: 600;
+}
+
+.terms-conditions .terms-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.terms-conditions .terms-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .terms-conditions .terms-content {
+        padding: 20px 30px;
+    }
+
+    .terms-conditions .header-section .title {
+        font-size: 2rem;
+    }
+
+    .terms-conditions .terms-content h4 {
+        font-size: 1.25rem;
+    }
+}

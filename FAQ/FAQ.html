@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Shravani Travels </title>
+    <title>FAQ | Shravani Travels </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/blog_common.css">
+    <link rel="stylesheet" href="../css/FAQ.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                        <a class="nav-link" href="../packages/package.html">Packages</a>
+                        <a class="nav-link active" aria-current="page" href="../packages/package.html">Packages</a>
                         <a class="nav-link" href="../about/about.html">About</a>
                         <a class="nav-link" href="../Blog/Blog.html">Blog</a>
                         <a class="nav-link" href="../contact/contact.html">Contact</a>
@@ -50,80 +50,97 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
                 <div class="col-md-9 ftco-animate pb-5">
-                    <nav style="--bs-breadcrumb-divider:'>'; color: aliceblue;" aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider:'>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="../Blog/Blog.html">Blog</a></li>
-                            <li class="bre<a href="../packages/price.html"><i class="fas fa-arrow-circle-right"></i>Book Now</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Header Section -->
-    <header class="blog-header">
-        <div class="container">
-            <h1>Why Lead Generation is Key for Business Growth</h1>
-            <div class="date">Oct. 29, 2019</div>
+
+    <div class="container">
+        <h2 class="section-title mb-4">FA<span>Q</span></h2>
+        <div class="question">
+            How do I verify my email?
         </div>
-    </header>
+        <div class="answercont">
+            <div class="answer">
+                Click the link in the verification email from verify@codepen.io (be sure to check your spam folder
+                or other email tabs if it's not in your inbox).
 
-    <!-- Blog Content Section -->
-    <section class="blog-content">
-        <div class="container">
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc ac nisi laoreet ullamcorper.
-                    Donec ultricies, sapien eget feugiat pharetra, sapien sapien tincidunt quam, a interdum nisl urna
-                    eget ante. Nullam bibendum, purus eu efficitur facilisis, odio augue vestibulum quam, id elementum
-                    felis magna a metus. Suspendisse potenti.</p>
+                Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for
+                your CodePen account.<br><br>
 
-                <p>Phasellus nec lacus felis. Aliquam erat volutpat. Nulla at consectetur eros, non lacinia lorem.
-                    Vivamus consectetur, sapien vel tincidunt facilisis, arcu odio consectetur velit, nec dictum libero
-                    eros id felis. Sed tempus arcu sed gravida commodo.</p>
-
-                <p>Quisque gravida tellus ac lectus suscipit, in dapibus metus laoreet. Cras et sapien non tortor
-                    tristique dignissim sit amet et urna. Nullam malesuada volutpat dolor, eget aliquam lacus facilisis
-                    nec. Nam euismod sem ac tortor fringilla, ac dapibus ligula gravida.</p>
-
-                <p>Integer ultrices libero in varius viverra. Integer bibendum vehicula sem, ut laoreet purus
-                    scelerisque eu. Ut tempor neque a quam dictum, in pharetra neque posuere.</p>
-            </article>
-
-            <!-- Author Info -->
-            <div class="author-info">
-                <h3>About the Author</h3>
-                <p><strong>John Doe</strong> is a digital marketing expert with over 10 years of experience in the
-                    industry. He specializes in lead generation and business growth strategies.</p>
-            </div>
-
-            <!-- Related Posts -->
-            <div class="related-posts">
-                <h2>Related Posts</h2>
-                <div class="related-post">
-                    <img src="../img/adv2.jpg" alt="Related Post 1">
-                    <div>
-                        <h3><a href="blog-single.html">How to Increase Your Conversion Rate</a></h3>
-                        <p>Discover actionable strategies to boost your conversion rates and drive more sales.</p>
-                    </div>
-                </div>
-                <div class="related-post">
-                    <img src="../img/adv3.jpg" alt="Related Post 2">
-                    <div>
-                        <h3><a href="blog-single.html">Understanding Customer Behavior</a></h3>
-                        <p>Learn about the key factors influencing customer behavior and how to leverage them.</p>
-                    </div>
-                </div>
-                <div class="related-post">
-                    <img src="../img/adv3.jpg" alt="Related Post 3">
-                    <div>
-                        <h3><a href="blog-single.html">Effective Social Media Strategies</a></h3>
-                        <p>Explore the best practices for creating successful social media campaigns.</p>
-                    </div>
-                </div>
+                <a href="https://blog.codepen.io/documentation/features/email-verification/#how-do-i-verify-my-email-2">How
+                    to Verify Email Docs</a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="container">
+        <div class="question">
+            My Pen loads infinitely or crashes the browser.
+        </div>
+        <div class="answercont">
+            <div class="answer">
+                It's likely an infinite loop in JavaScript that we could not catch. To fix, add ?turn_off_js=true to
+                the end of the URL (on any page, like the Pen or Project editor, your Profile page, or the
+                Dashboard) to temporarily turn off JavaScript. When you're ready to run the JavaScript again, remove
+                ?turn_off_js=true and refresh the page.<br><br>
+
+                <a href="https://blog.codepen.io/documentation/features/turn-off-javascript-in-previews/">How to
+                    Disable JavaScript Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="question">
+            How do I contact the creator of a Pen?
+        </div>
+        <div class="answercont">
+            <div class="answer">
+                You can leave a comment on any public Pen. Click the "Comments" link in the Pen editor view, or
+                visit the Details page.<br><br>
+
+                <a href="https://blog.codepen.io/documentation/faq/how-do-i-contact-the-creator-of-a-pen/">How to
+                    Contact Creator of a Pen Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="question">
+            What version of [library] does CodePen use?
+        </div>
+        <div class="answercont">
+            <div class="answer">
+                We have our current list of library versions <a href="https://codepen.io/versions">here</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="question">
+            What are forks?
+        </div>
+        <div class="answercont">
+            <div class="answer">
+                A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your
+                forked copy comes with everything the original author wrote, including all of the code and any
+                dependencies.<br><br>
+
+                <a href="https://blog.codepen.io/documentation/features/forks/">Learn More About Forks</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
     <section class="section-services">
         <div class="container">
             <div class="row justify-content-center text-center">
@@ -229,6 +246,7 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
         <!-- Section: Social media -->
@@ -278,15 +296,13 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-
-                    <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
                             Quick links
                         </h6>
                         <p>
-                            <a href="../Home.html" class="text-reset">Home</a>
+                            <a href="../index.html" class="text-reset">Home</a>
                         </p>
                         <p>
                             <a href="../packages/price.html" class="text-reset">Packages</a>
@@ -317,6 +333,7 @@
                             <a href="../Blog/blog-single.html" class="text-reset">Blog</a>
                         </p>
                     </div>
+
                     <!-- Grid column -->
 
                     <!-- Grid column -->
@@ -349,6 +366,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/FAQ.js"></script>
 </body>
 
 </html>

@@ -40,13 +40,6 @@
     z-index: 1;
 }
 
-/* Animated Text */
-.animated-text {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
-}
 /* Contact Section */
 .contact-section {
     background: rgba(255, 255, 255, 0.2);
@@ -67,7 +60,7 @@
 
 .contact-info .contact-details a:hover {
     text-decoration: none;
-    color: lightblue;
+    color: #818589;
 }
 
 .contact-section:hover {
@@ -122,18 +115,50 @@
     }
 }
 
-/* Main Content Sections */
+/* special offer Sections */
 .container-section {
     padding: 60px 0;
 }
 
 .section-title {
+    position: relative;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size: 34px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
+    text-transform: none;
+    margin-bottom: 10px;
 }
 
-/* Cards */
+.section-title span{
+    color: red;
+    position: relative;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+.section-title:before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f91942;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+/* why choos us section */
 .card {
     border: none;
     transition: transform 0.3s ease-in-out;
@@ -521,34 +546,90 @@ p.awesome_line {
 
 /* How It Works */
 .how-it-works {
-    text-align: center;
-    padding-top: 30px ;
+    padding: 60px 40px;
+    margin-top: 50px;
 }
 
-.how-it-works h2 {
+
+.how-it-works .card {
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    background: #f1f1f1;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.how-it-works .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background: #e9ecef;
+}
+
+.how-it-works .icon {
+    font-size: 3rem;
+    color: #f91942;
+    margin-bottom: 20px;
+}
+
+.how-it-works .card-title {
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.how-it-works p {
-    margin-bottom: 40px;
+.how-it-works .card-text {
+    color: #555;
 }
 
-.step {
-    margin-bottom: 20px;
+/* Styles for tablets and small screens */
+@media (max-width: 768px) {
+    .how-it-works {
+        padding: 30px 20px;
+    }
+
+    .how-it-works .icon {
+        font-size: 2.5rem;
+    }
+
+    .how-it-works h2 {
+        font-size: 1.75rem;
+    }
+
+    .how-it-works .card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .how-it-works .card-title {
+        font-size: 1.25rem;
+    }
 }
 
-.step .icon {
-    background-color: #f0f0f5;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-}
+/* Styles for mobile screens */
+@media (max-width: 576px) {
+    .how-it-works {
+        padding: 20px 15px;
+    }
 
-.step h5 {
-    font-weight: bold;
+    .how-it-works h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works .icon {
+        font-size: 2rem;
+    }
+
+    .how-it-works .card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .how-it-works .card-title {
+        font-size: 1.15rem;
+    }
+
+    .how-it-works .card-text {
+        font-size: 0.95rem;
+    }
 }
