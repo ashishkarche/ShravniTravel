@@ -41,7 +41,7 @@ root/
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/yourusername/shravanitravels.git
+   git clone https://github.com/ashishkarche/shravanitravels.git
    ```
 
 2. **Open in Browser**: Navigate to the root directory and open `index.html` in a browser to view the website.
